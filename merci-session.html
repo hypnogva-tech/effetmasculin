@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session confirmée — Sam David</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','3812816162336172');
+fbq('track','PageView');
+fbq('track','Purchase',{value:80.00,currency:'EUR'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3812816162336172&ev=Purchase&noscript=1"/></noscript>
+
+<style>
+:root{--gold:#B8860B;--dark:#1a1a2e;--light:#F8F6F0;--text:#2C2C2C;--text-light:#666;--green:#27AE60;--border:#E8E0D0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--light);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;line-height:1.15}
+.container{max-width:600px;width:100%;text-align:center}
+.check{width:80px;height:80px;border-radius:50%;background:rgba(39,174,96,.12);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;margin:0 auto 32px;font-size:36px}
+h1{font-size:clamp(30px,5vw,50px);font-weight:700;margin-bottom:12px;color:var(--dark)}
+h1 em{color:var(--gold);font-style:italic;display:block}
+.subtitle{font-size:17px;color:var(--text-light);margin-bottom:40px;line-height:1.7}
+.warning{background:rgba(184,134,11,.08);border:1px solid rgba(184,134,11,.25);padding:16px 22px;margin-bottom:36px;font-size:13px;color:var(--text);line-height:1.7;border-radius:4px;text-align:left}
+.warning strong{color:var(--gold)}
+.steps{display:flex;flex-direction:column;gap:2px;margin-bottom:40px;text-align:left}
+.step{background:#fff;padding:22px 26px;display:flex;gap:18px;align-items:flex-start;border-left:3px solid var(--border)}
+.step.active{border-left-color:var(--gold)}
+.step-icon{font-size:22px;flex-shrink:0;margin-top:2px}
+.step-content h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.step-content p{font-size:14px;color:var(--text-light);line-height:1.6}
+.step-content a{color:var(--gold);text-decoration:none;font-weight:600}
+.contact{font-size:13px;color:var(--text-light);margin-top:24px}
+.contact a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="check">✓</div>
+
+  <h1>Session confirmée.<br><em>À très vite.</em></h1>
+
+  <p class="subtitle">Ton paiement est bien reçu. Voici ce qui se passe maintenant.</p>
+
+  <div class="warning">
+    <strong>⚠️ Vérifie tes spams</strong> — Un email de confirmation Calendly vient d'être envoyé. S'il n'est pas dans ta boîte principale vérifie tes spams et ajoute <strong>contact@lesambitieuxaccomplis.com</strong> à tes contacts.
+  </div>
+
+  <div class="steps">
+    <div class="step active">
+      <div class="step-icon">📅</div>
+      <div class="step-content">
+        <h3>Ton créneau est réservé</h3>
+        <p>Tu as reçu une confirmation Calendly avec le lien de connexion visio. Vérifie tes emails et tes spams.</p>
+      </div>
+    </div>
+    <div class="step active">
+      <div class="step-icon">🎯</div>
+      <div class="step-content">
+        <h3>Prépare ta situation</h3>
+        <p>Pas besoin de préparer un discours. Pense juste à ce que tu vis concrètement — on rentre immédiatement dans le vif du sujet dès qu'on se connecte.</p>
+      </div>
+    </div>
+    <div class="step active">
+      <div class="step-icon">🚀</div>
+      <div class="step-content">
+        <h3>Tu repars avec un plan d'action</h3>
+        <p>À la fin de la session Sam te donne quelque chose de bien spécifique à faire immédiatement. Pas de la théorie — une action concrète adaptée à ta situation.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-icon">💬</div>
+      <div class="step-content">
+        <h3>Une question ?</h3>
+        <p>Écris directement à Sam : <a href="mailto:contact@lesambitieuxaccomplis.com">contact@lesambitieuxaccomplis.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <p class="contact">Des questions ? <a href="mailto:contact@lesambitieuxaccomplis.com">contact@lesambitieuxaccomplis.com</a></p>
+
+</div>
+</body>
+</html>
