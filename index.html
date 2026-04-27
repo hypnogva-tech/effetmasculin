@@ -372,9 +372,27 @@ footer{padding:24px 20px;border-top:1px solid var(--border);text-align:center;fo
     <span class="lbl tc" style="text-align:center;display:block;margin-bottom:10px">Réserve ta session</span>
     <h2 class="tc" style="margin-bottom:10px">Choisis ton créneau<br><em>et transforme ta vie amoureuse.</em></h2>
     <p class="tc sub">45 minutes · 80€ · Plan d'action concret garanti</p>
-    <div class="calendly-inline-widget" data-url="https://calendly.com/lesambitieuxacomplis/appel-revelation-clone" style="min-width:320px;height:700px"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  </div>
+   <div id="calendly-placeholder" style="text-align:center;padding:60px 20px;background:var(--light2);border-radius:8px;cursor:pointer" onclick="loadCalendly()">
+  <p style="font-size:18px;font-weight:700;color:var(--dark);margin-bottom:12px">📅 Clique pour voir les créneaux disponibles</p>
+  <p style="font-size:14px;color:var(--tl)">Le calendrier se charge en un clic</p>
+  <div style="margin-top:20px;display:inline-block;background:var(--dark);color:#fff;padding:16px 36px;border-radius:2px;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:14px">Voir les créneaux →</div>
+</div>
+<div id="calendly-widget" style="display:none;min-width:320px;height:700px"></div>
+<script>
+function loadCalendly(){
+  document.getElementById('calendly-placeholder').style.display='none';
+  document.getElementById('calendly-widget').style.display='block';
+  var s=document.createElement('script');
+  s.src='https://assets.calendly.com/assets/external/widget.js';
+  document.head.appendChild(s);
+  s.onload=function(){
+    Calendly.initInlineWidget({
+      url:'https://calendly.com/lesambitieuxacomplis/appel-revelation-clone',
+      parentElement:document.getElementById('calendly-widget')
+    });
+  }
+}
+</script>
 </section>
 
 <!-- URGENCY -->
